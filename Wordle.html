@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="Wordle.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script type="module" src="Wordle.js"></script>
+  <script type="module" src="words.js"></script>
+  <span id = "header">
+    <button id = "back">&#8592;</button>
+    <p id = "wordle"> Wordle </p>
+    <button id="darkLight"></button>
+  </span>
+  <div id="alertList"></div>
+  <div id="gameContainer">
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  <div class="row2">
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+    <input maxlength = 1 tabindex="-1"></input>
+  </div>
+  </div>
+  <div id="keyboard">
+    <div class="row">
+      <button>q</button>
+      <button>w</button>
+      <button>e</button>
+      <button>r</button>
+      <button>t</button>
+      <button>y</button>
+      <button>u</button>
+      <button>i</button>
+      <button>o</button>
+      <button>p</button>
+    </div>
+    <div class="row">
+      <button>a</button>
+      <button>s</button>
+      <button>d</button>
+      <button>f</button>
+      <button>g</button>
+      <button>h</button>
+      <button>j</button>
+      <button>k</button>
+      <button>l</button>
+    </div>
+    <div class="row">
+      <button class="bigButton">enter</button>
+      <button>z</button>
+      <button>x</button>
+      <button>c</button>
+      <button>v</button>
+      <button>b</button>
+      <button>n</button>
+      <button>m</button>
+      <button class="bigButton">⌫</button>
+    </div>
+  </div>
+</body>
+  <div id = "finalPopup" class = "off">
+    <button id="x">&#x2715</button>
+    <p class="fPop" id = "fTopic">Your Topic Was No Poverty</p>
+    <p class = "fPop">Thanks for playing!</p>
+    <button class = "fPop" id = "reset"><span>NEW GAME</span></button>
+    <button class = "fPop" id = "back2"><span>Back To Home Page</span></button>
+  </div>
+</html>

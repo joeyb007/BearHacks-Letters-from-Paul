@@ -1,0 +1,77 @@
+.header1 {
+    text-align: center;
+    font-size: 8vh;
+    background-color: #ffe4ad;
+  }
+  .para1 {
+    text-indent: 5vw;
+    color: white;
+  }
+  
+  html {
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header3 {
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+  }
+  
+  .topnav {
+    background-color: #212121;
+    overflow: hidden;
+    height: 10vh;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:1.5vw;
+    margin-right:1.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vh;
+    padding: 1vw;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #ddab55;
+    color: white;
+  }
+  .topnav select {
+    float: left;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 31%;
+    text-decoration: none;
+    font-size: 4vh;
+    background-color: #333;
+  }
+  
+  
+  .topnav select:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav select.active {
+    background-color: #ddab55;
+    color: white;
+  }

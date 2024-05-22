@@ -1,0 +1,407 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  html.light {
+    background-color: #ffffff;
+  }
+  
+  #wordBox {
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100vh;
+    height: 60vh;
+    justify-content: space-evenly;
+  }
+  
+  span.word {
+    font-family: "Verdana";
+    font-size: 2.5vh;
+    font-weight: 700;
+    background-color: #545454;
+    color: white;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    height: 15vh;
+    width: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  span.word.selected {
+    background-color: grey;
+    color: black;
+  }
+  
+  span.word.light{
+    background-color: #eaeae6;
+    color: black;
+  }
+  
+  span.word.light.selected {
+    background-color: #545454;
+    color: white;
+  }
+  
+  #submit{
+    margin: 10vh;
+    border-color: #d8d5d5;
+    background-color: #545454;
+    border-style: solid;
+    border-width: 0.5vh;
+    border-radius: 2vh;
+    padding: 2vh;
+    font-family: "Trebuchet MS";
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  #submit.light{
+    background-color: #eaeae6;
+    color: black;
+  }
+  
+  .selectedSubmit {
+    background-color: black;
+    color: white;
+  }
+  
+  #purple {
+    display: none;
+    order:-4;
+    width: 100%;
+    background-color: #a540a5;
+    font-family: "Times New Roman";
+    font-size: 6vh;
+    font-weight: 700;
+    color: rgb(40, 38, 38);
+    border-radius: 1vh;
+    margin-top: 2vh;
+    height: 15vh;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+  }
+  
+  #blue {
+    display: none;
+    order: -3;
+    width: 100%;
+    background-color: #6565c8;
+    font-family: "Times New Roman";
+    font-size: 6vh;
+    font-weight: 700;
+    color: rgb(40, 38, 38);;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    height: 15vh;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+  }
+  
+  #green {
+    display: none;
+    order:-2;
+    width: 100%;
+    background-color: #5db15d;
+    font-family: "Times New Roman";
+    font-size: 6vh;
+    font-weight: 700;
+    color: rgb(40, 38, 38);
+    border-radius: 1vh;
+    margin-top: 2vh;
+    height: 15vh;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+  }
+  
+  #yellow {
+    display: none;
+    order: -1;
+    width: 100%;
+    background-color: #d6d671;
+    font-family: "Times New Roman";
+    font-size: 6vh;
+    font-weight: 700;
+    color: rgb(40, 38, 38);
+    border-radius: 1vh;
+    margin-top: 2vh;
+    height: 15vh;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+  }
+  
+  #header {
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    color: white;
+    border-bottom: 0.1vh solid grey;
+  }
+  
+  #ph{
+    width: 100vw;
+    height: 7vh;
+  }
+  
+  #wordle {
+    font-size: 5vh;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5vh;
+    transition: color 0.5s ease;
+  }
+  #darkLight{
+    border: none;
+    height: 5vh;
+    width: 5vh;
+    background-color: transparent;
+    background-image: url("https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-30.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:3%;
+    right: 3%;
+    filter: brightness(100);
+    transition: background-image 0.5s ease;
+  }
+  
+  #wordle.light{
+    color: #000000;
+  }
+  
+  #darkLight.light{
+    background-image: url("https://static.thenounproject.com/png/3861733-200.png");
+  }
+  
+  #finalPopup.off {
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  #finalPopup.on {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  #finalPopup {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s, background-color 0.5s ease;
+  }
+  
+  #finalPopup.light {
+    background-color: #ffffff;
+  }
+  
+  button.fPop{
+    height: 10vh;
+    width: 40vw;
+    border-radius: 10vh;
+    color: white;
+    background-color: #424242;
+    margin: 1vh;
+    transition: color 0.5s ease, background-color 0.5s ease;
+  }
+  
+  button.fPop.light{
+    background-color: #eaeae6;
+    color: black;
+  }
+  
+  button > span{
+    pointer-events: none;
+    font-size: 3vh;
+  }
+  
+  p.fPop {
+    color: white;
+    font-size: 5vh;
+    font-family: 'Arial', Times, serif;
+    text-align: center;
+    transition: color 0.5s ease;
+  }
+  
+  p.fPop.light{
+    color: black;
+  }
+  
+  a{
+    color: #ff6bff;
+    font-style: italic;
+  }
+  
+  #x{
+    background-color: transparent;
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    top: 5vh;
+    right: 5vh;
+    color: white;
+  }
+  
+  button{
+    border: none;
+  }
+
+  #back{
+    z-index: 99;
+    color: #ffffff;
+    background-color: transparent;
+    position: absolute;
+    position: absolute;
+    top:3%;
+    left: 3%;
+    font-size: 150%;
+    height: 5vh;
+    width: 5vh;
+    transition: color 0.5s ease;
+  }
+
+  #back.light{
+    color: black;
+  }
+
+  #alertList{
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 7vh;
+    width: 20vh;
+    height: 75vh;
+    z-index: 99999;
+  }
+  
+  #alertList div{
+    animation: fade 2s;
+    background-color: white;
+    width: 80%;
+    height: 5%;
+    border-radius: 1vh;
+    color: black;
+    font-size: 60%;
+    text-align: center;
+    padding-top: 8%;
+    font-weight: 550;
+    font-family: 'Arial', Times, serif;
+    margin-bottom: 2vh;
+  }
+  
+  #alertList div:before{
+    content: "One Away!";
+  }
+
+  @keyframes fade{
+    0%{
+      opacity: 1;
+    }
+    80%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @media screen and (max-width: 100vh){
+    #wordBox {
+      width: 70vw;
+      height: 40vw;
+    }
+    span.word {
+      font-size: 1.5vw;
+      border-radius: 1vw;
+      margin-top: 2vw;
+      height: 10vw;
+      width: 15vw;
+    }
+  
+    #submit{
+      margin: 10vw;
+      border-width: 0.5vw;
+      border-radius: 2vw;
+      padding: 2vw;
+    }
+  
+    #header {
+      width: 100vw;
+      height: 7vh;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      text-align: center;
+      color: white;
+      border-bottom: 0.1vw solid grey;
+    }
+  
+    #ph{
+      width: 100vw;
+      height: 7vw;
+    }
+  
+    #wordle {
+      font-size: 5vw;
+      margin-top: 0.5vw;
+    }
+    
+    #darkLight{
+      height: 5vw;
+      width: 5vw;
+    }
+  
+    #finalPopup {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 0.3s;
+    }
+  
+    button.fPop{
+      height: 10vh;
+      width: 40vw;
+      border-radius: 10vw;
+      margin: 1vw;
+    }
+  
+    button > span{
+      font-size: 3vw;
+    }
+  
+    p.fPop {
+      font-size: 5vw;
+    }
+  }
