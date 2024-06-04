@@ -130,6 +130,7 @@ html {
     right: 3%;
     filter: brightness(100);
     transition: background-image 0.5s ease;
+    z-index: 1000;
   }
   
   #wordle.light{
@@ -138,4 +139,11 @@ html {
   
   #darkLight.light{
     background-image: url("https://static.thenounproject.com/png/3861733-200.png");
+  }
+
+  #header {
+    border: none;
+  }
+  html.light {
+    background-color: #ffffff;
   }
